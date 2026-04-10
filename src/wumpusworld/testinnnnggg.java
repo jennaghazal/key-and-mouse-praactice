@@ -7,25 +7,18 @@ import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class wumpusframe extends JFrame implements KeyListener, MouseListener {
-    public static final int PLAYING = 0;
-    public static final int DEAD = 1;
-    public static final int WON = 2;
+public class testinnnnggg extends JFrame implements KeyListener, MouseListener {
 
-//    private int status;
-//    private WumpusPlayer player;
-//    private WumpusMap map;
-    public wumpusframe(){
+    public testinnnnggg(){
+        super("ah lelele ah lela");
+
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(500,500);
-        setVisible(true);
+        setSize(500,700);
 
         addMouseListener(this);
-        setBackground(Color.black);
-
-
-
+        addKeyListener(this);
+        setVisible(true);
     }
 
     @Override
@@ -35,7 +28,11 @@ public class wumpusframe extends JFrame implements KeyListener, MouseListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-        System.out.println("key pressed down!");
+        if(e.getKeyChar() == '*'){
+            System.out.println("cheat mode enabled");
+        } else if (e.getKeyChar() == 'w' || e.getKeyChar() == 'W') {
+            System.out.println("IM RUNNING UPPP");
+        }
     }
 
     @Override
@@ -74,8 +71,8 @@ public class wumpusframe extends JFrame implements KeyListener, MouseListener {
     public void paint(Graphics g){
 
     }
-
-    public void addNotify(){
-
-    }
+//
+//    public void addNotify(){
+//
+//    }
 }
