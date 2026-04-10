@@ -30,8 +30,15 @@ public class testinnnnggg extends JFrame implements KeyListener, MouseListener {
     public void keyPressed(KeyEvent e) {
         if(e.getKeyChar() == '*'){
             System.out.println("cheat mode enabled");
-        } else if (e.getKeyChar() == 'w' || e.getKeyChar() == 'W') {
+        } else if (e.getKeyCode() == 'W') {
             System.out.println("IM RUNNING UPPP");
+        }
+        else if ( e.getKeyCode() =='D'){
+            System.out.println("AHLELELEAHLELA");
+        } else if (e.getKeyCode() == 'A') {
+
+        } else if (e.getKeyCode() == 'S') {
+            
         }
     }
 
